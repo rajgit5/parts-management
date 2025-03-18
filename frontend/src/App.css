@@ -1,0 +1,52 @@
+.box {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  align-items: center;
+  background-color: gray;
+}
+.main {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width:678px) {
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width:800px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+nav {
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+}
+* {
+  margin: 0;
+}
+.manager {
+  margin: 20px;
+}
+
+.create-form {
+  text-align: center;
+}
+.create-form input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.create-form button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.create-form button:hover {
+  background-color: brown;
+}
